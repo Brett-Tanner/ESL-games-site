@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+.header {
+    display: flex;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.header a, .header li {
+    text-decoration: none;
+    color: white;
+}
+
+.header, .section1 {
+    background-color: #1F2937;
+}
