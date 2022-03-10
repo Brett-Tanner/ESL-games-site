@@ -24,7 +24,7 @@ body {
     display: flex;
 }
 
-.header, .section1, .footer {
+.header, .footer {
     background-color: #1F2937;
     padding: 10px 100px;
 }
@@ -53,8 +53,48 @@ body {
 
 .section1, .section2, .section3, .section4 {
     flex: 1;
+    padding: 40px 100px;
+    display: flex;
 }
 
+.section1 {
+    background-color: #1F2937;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section1-text {
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    background-color: #3882F6;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 8px 15px;
+    width: fit-content;
+}
+
+.section1-img {
+    flex: 1;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.section1 img {
+    max-width: 500px;
+    max-height: 500px;
+    background-color: #1F2937;
+}
 
 .footer {
     flex: 0;
