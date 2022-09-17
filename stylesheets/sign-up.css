@@ -1,0 +1,33 @@
+:root {
+    font-size: 6.25%;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    flex-flow: row wrap;
+    align-content: stretch;
+}
+
+/* For the sidebar */
+
+section.sidebar {
+    flex: 1 1 40vw;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    background: url(../assets/images/sign-up_sidebar_orig.jpg) center/cover; 
+}
+
+.sidebar > div, .sidebar > div > a {
+    color: white;
+    font-size: 10rem;
+    align-self: center;
+}
+
+/* For the form side */
+
+section.content {
+    flex: 1 1 60vw;
+    font-size: 12rem;
+}
+
