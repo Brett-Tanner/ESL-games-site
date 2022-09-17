@@ -14,14 +14,23 @@ body {
 section.sidebar {
     flex: 1 1 40vw;
     display: flex;
-    flex-flow: column-reverse nowrap;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
     background: url(../assets/images/sign-up_sidebar_orig.jpg) center/cover; 
 }
 
-.sidebar > div, .sidebar > div > a {
-    color: white;
+.sidebar > p, .sidebar > p > a {
+    color: grey;
     font-size: 10rem;
     align-self: center;
+}
+
+.sidebar > img {
+    max-width: 50%;
+    height: auto;
+    padding-top: 30%;
+    opacity: 80%;
 }
 
 /* For the form side */
