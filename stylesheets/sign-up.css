@@ -43,31 +43,70 @@ p, a, h1, form {
 }
 
 .content > h1 {
-    padding: 10%;
-}
-
-form {
-    background-color: #1d4fa0;
     padding: 5%;
-}
-
-fieldset {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    border: none;
-}
-
-fieldset > p {
-    display: flex;
-    flex-flow: column nowrap;
-}
-
-button {
-    margin: 3% 5%;
 }
 
 .content > p {
     margin-left: 5%;
 }
 
+/* From here is just for the form and button */
+
+form {
+    background-color: #1d4fa0;
+    padding: 2% 5%;
+    box-shadow: 0rem 3rem 3rem rgba(75, 112, 172, 0.5), 0rem -3rem 3rem rgba(75, 112, 172, 0.5);
+    font-size: 15rem;
+}
+
+fieldset {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    border: none;
+}
+
+fieldset > p {
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 15rem;
+    row-gap: 5rem;
+    margin-right: 15%;
+}
+
+fieldset input:focus {
+    box-shadow: 5rem 7rem 3rem rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+fieldset input:valid {
+    border: 1rem solid rgba(144, 238, 144, 0.5);
+}
+
+fieldset input:focus:invalid {
+    border: 1rem solid rgba(255, 0, 0, 0.5);
+}
+
+fieldset input {
+    border: 2rem solid rgba(0, 0, 0, 0.5);
+    border-radius: 4rem;
+    background-color: rgba(75, 112, 172, 0.7);
+    height: 20rem;
+    color: antiquewhite;
+}
+
+button {
+    margin: 3% 5%;
+    padding: 10rem;
+    border: 4px outset rgba(29, 79, 160, 0.6);
+    border-radius: 10rem;
+    background-color: rgb(29, 79, 160);
+    color: antiquewhite;
+    font-size: 15rem;
+    font-weight: 1000;
+}
+
+button:hover {
+    border: 4px inset rgba(29, 79, 160, 0.6);
+    background-color: #2b4975;
+}

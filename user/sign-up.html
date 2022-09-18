@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="../stylesheets/normalize.css"> 
         <link rel="stylesheet" href="../stylesheets/site_wide.css"> 
         <link rel="stylesheet" href="../stylesheets/sign-up.css"> 
+        <link rel="icon" type="image/png" href="../assets/icons/site_icon.png">
     </header>
 
     <body>
@@ -20,35 +21,35 @@
         <section class="content">
             <h1>Sign up to track and share your learning progress, earn points and join the leaderboard!</h1>
             <form action="" method="post" id="sign-up">
-                <caption>Let's get started!</caption>
+                <caption><h2>Let's get started!</h2></caption>
                 <fieldset>
                     <p>
-                        <label for="">FIRST NAME</label>
-                        <input type="text">
+                        <label for="fname">First Name</label>
+                        <input type="text" name="first_name" id="fname" required>
                     </p>
                     <p>
-                        <label for="">LAST NAME</label>
-                        <input type="text">
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="last_name" id="lname" required>
                     </p>
                 </fieldset>
                 <fieldset>
                     <p>
-                        <label for="">EMAIL</label>
-                        <input type="email">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
                     </p>
                     <p>
-                        <label for="">PHONE NUMBER</label>
-                        <input type="tel">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" required>
                     </p>
                 </fieldset>
                 <fieldset>
                     <p>
-                        <label for="">PASSWORD</label>
-                        <input type="password">
+                        <label for="pwd">Password</label>
+                        <input type="password" name="pwd" id="pwd" required>
                     </p>
                     <p>
-                        <label for="">CONFIRM PASSWORD</label>
-                        <input type="password">
+                        <label for="pwd_confirm">Confirm Password</label>
+                        <input type="password" name="pwd_confirm" id="pwd_confirm" required>
                     </p>
                 </fieldset>
             </form>
