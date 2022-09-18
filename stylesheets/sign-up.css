@@ -1,42 +1,73 @@
-:root {
-    font-size: 6.25%;
+body {
+    flex-flow: row wrap;
 }
 
-body {
-    height: 100vh;
-    width: 100vw;
-    flex-flow: row wrap;
-    align-content: stretch;
+p, a, h1, form {
+    color: antiquewhite;
 }
 
 /* For the sidebar */
 
-section.sidebar {
+.sidebar {
     flex: 1 1 40vw;
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
     justify-content: space-between;
     background: url(../assets/images/sign-up_sidebar_orig.jpg) center/cover; 
 }
 
-.sidebar > p, .sidebar > p > a {
-    color: grey;
+.attribution {
     font-size: 10rem;
-    align-self: center;
+    align-self: flex-end;
 }
 
-.sidebar > img {
+.sidebar > div {
+    justify-content: center;
+    margin-top: 15%;
+    background-color: rgba(31, 41, 55, 0.6);
+}
+
+/* TODO: use media queries to load different pic sizes for different displays */
+.sidebar > div > img {
     max-width: 50%;
     height: auto;
-    padding-top: 30%;
-    opacity: 80%;
+    opacity: 0.8;
 }
 
 /* For the form side */
 
-section.content {
+.content {
     flex: 1 1 60vw;
     font-size: 12rem;
+    background-color: #1F2937;
+}
+
+.content > h1 {
+    padding: 10%;
+}
+
+form {
+    background-color: #1d4fa0;
+    padding: 5%;
+}
+
+fieldset {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border: none;
+}
+
+fieldset > p {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+button {
+    margin: 3% 5%;
+}
+
+.content > p {
+    margin-left: 5%;
 }
 

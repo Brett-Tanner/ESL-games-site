@@ -10,13 +10,16 @@
 
     <body>
         <section class="sidebar">
-            <img src="../assets/icons/site_icon.png" alt="Site Icon - Graduation hat on a computer screen">
-            <p>
+            <div>
+                <img src="../assets/icons/site_icon.png" alt="Site Icon - Graduation hat on a computer screen">
+            </div>
+            <p class="attribution">
                 Photo by <a href="https://unsplash.com/@elijahhail?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Elijah Hail</a> on <a href="https://unsplash.com/s/photos/english-study?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
             </p>
         </section>
         <section class="content">
-            <form action="" method="post">
+            <h1>Sign up to track and share your learning progress, earn points and join the leaderboard!</h1>
+            <form action="" method="post" id="sign-up">
                 <caption>Let's get started!</caption>
                 <fieldset>
                     <p>
@@ -48,8 +51,8 @@
                         <input type="password">
                     </p>
                 </fieldset>
-                <button type="submit">Create Account</button>
             </form>
+            <button type="submit" form="sign-up">Create Account</button>
             <p>
                 Already have an account? <a href="./user/sign-in.html">Log in</a>
             </p>

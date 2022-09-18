@@ -1,4 +1,5 @@
-* {
+:root {
+    font-size: 6.25%;
     box-sizing: border-box;
     font-family: roboto, sans-serif;
 }
