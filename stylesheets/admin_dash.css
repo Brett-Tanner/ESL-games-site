@@ -1,0 +1,35 @@
+body {
+    display: grid;
+    grid-template: 50rem 80rem 1fr 30rem / 30% 70%;
+    grid-template-areas: 
+    "header header"
+    "sidebar welcome_bar"
+    "sidebar admin-tools"
+    "footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.header > a > img {
+    height: 45rem;
+    width: auto;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #1d4fa0;
+}
+
+.welcome_bar {
+    grid-area: welcome_bar;
+}
+
+.admin_tools {
+    grid-area: admin_tools;
+}
+
+.footer {
+    grid-area: footer;
+}

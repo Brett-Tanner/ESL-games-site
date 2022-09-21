@@ -2,6 +2,10 @@ body {
     flex-flow: row wrap;
 }
 
+div, body {
+    display: flex;
+}
+
 p, a, h1, form {
     color: antiquewhite;
 }
@@ -27,7 +31,6 @@ p, a, h1, form {
     background-color: rgba(31, 41, 55, 0.6);
 }
 
-/* TODO: use media queries to load different pic sizes for different displays */
 .sidebar > div > img {
     max-width: 50%;
     height: auto;
