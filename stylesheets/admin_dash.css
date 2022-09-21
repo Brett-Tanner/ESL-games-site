@@ -4,7 +4,7 @@ body {
     grid-template-areas: 
     "header header"
     "sidebar welcome_bar"
-    "sidebar admin-tools"
+    "sidebar cards"
     "footer footer";
 }
 
@@ -18,19 +18,22 @@ body {
     background-color: #1F2937;
     display: flex;
     flex-flow: column wrap;
+    justify-content: space-between;
 }
 
 #sidebar ul {
-    margin-top: 30rem;
+    margin-top: 15%;
     display: flex;
     flex-flow: column wrap;
     gap: 15rem;
+    padding-left: 25%;
 }
 
 #sidebar ul img {
     filter: invert(1);
     height: 20rem;
     width: auto;
+    margin-right: 20rem;
 }
 
 #sidebar a {
@@ -41,9 +44,9 @@ body {
 
 #welcome_bar {
     grid-area: welcome_bar;
-    box-shadow: 0rem 3rem 2rem gray;
+    box-shadow: 0rem 3rem 2rem black;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
     gap: 30rem;
@@ -52,7 +55,7 @@ body {
 }
 
 #welcome_bar button {
-    flex: 1 1 auto;
+    flex: 1 1 10%;
     font-size: 15rem;
     background-color: #33455f;
     color: white;
@@ -91,11 +94,120 @@ body {
 }
 
 #cards {
-    grid-area: admin_tools;
+    grid-area: cards;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+    "recent announcements"
+    "recent messages";
+    padding: 15rem;
+    color: #1F2937;
+    background-color: rgb(245, 245, 245);
+}
+
+#cards h1 {
+    margin: 0;
+    font-size: 18rem;
+    grid-area: heading;
+}
+
+#cards p {
+    font-size: 12rem;
+}
+
+.recent {
+    grid-area: recent;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    gap: 10rem;
+    padding: 10rem;
+}
+
+.recent > div {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: white;
+    border-radius: 8rem;
+    border-left: 5px inset #1d4fa0;
+    padding: 10rem;
+    box-shadow: 2rem 2rem 2rem black;
+}
+
+.card_actions {
+    align-self: flex-end;
+    display: flex;
+    gap: 10rem;
+}
+
+.card_actions img {
+    max-height: 14rem;
+}
+
+#announcements, #messages {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10rem;
+}
+
+#announcements > div, #messages > div {
+    background-color: white;
+    box-shadow: 2rem 2rem 2rem black;
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    border-radius: 8rem;
+    padding: 10rem;
+    margin: 0rem 10rem 10rem 10rem;
+}
+
+#announcements > div {
+    align-items: center;
+    text-align: center;
+}
+
+#announcements > div p {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 8rem;
+}
+
+.message {
+    display: grid;
+    grid-template: 12rem 24rem / 1fr 4fr;
+    gap: 8rem;
+}
+
+.message img {
+    grid-row: 1 / 3;
+    min-height: 50rem;
+}
+
+.message span {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.message span:nth-child(2) {
+    font-weight: bold;
+    
+}
+
+#announcements {
+    grid-area: announcements;
+    
+}
+
+#messages {
+    grid-area: messages;
+
 }
 
 #footer {
     grid-area: footer;
     background-color: #1d4fa0;
 }
-
