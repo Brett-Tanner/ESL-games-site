@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template: 50rem 80rem 1fr 20rem / 30% 70%;
+    grid-template: 50rem 80rem 1fr 20rem / 20% 80%;
     grid-template-areas: 
     "header header"
     "sidebar welcome_bar"
@@ -13,13 +13,30 @@ body {
     background-color: #1d4fa0;
 }
 
-#header_search {
-    background-color: rgba(31, 41, 55, 0.7);
-}
-
 .sidebar {
     grid-area: sidebar;
     background-color: #1F2937;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.sidebar ul {
+    margin-top: 30rem;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15rem;
+}
+
+.sidebar ul img {
+    filter: invert(1);
+    height: 20rem;
+    width: auto;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    font-size: 20rem;
 }
 
 .welcome_bar {

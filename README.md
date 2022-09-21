@@ -14,6 +14,6 @@ Odin/Portfolio project
 # Admin dashboard
 - can add new word lists to each game
 - disable or add games
-- run games in some kind of debug mode?
 - read user feedback/bug reports/suggestions
 - user list
+- history of changes you/other admins have made

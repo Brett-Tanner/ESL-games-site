@@ -20,14 +20,15 @@ html, body {
     align-items: center;
     font-size: 15rem;
     color: white;
-    gap: 10rem;
 }
 
 .header img {
     height: 40rem;
     width: auto;
-    margin-right: 10rem;
-    margin-left: 10rem;
+}
+
+#title {
+    font-size: 20rem;
 }
 
 .header form {
@@ -41,7 +42,7 @@ html, body {
     border-radius: 5rem;
     height: 30rem;
     width: 60%;
-    background-color: #1d4fa0;
+    background-color: rgba(31, 41, 55, 0.7);
     color: white;
 }
 
@@ -62,13 +63,15 @@ html, body {
     align-items: center;
     color: white;
     text-decoration: none;
+    gap: 15rem;
 }
 
 .footer {
     display: flex;
     font-size: 10rem;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 50rem;
 }
 
 .footer a {
