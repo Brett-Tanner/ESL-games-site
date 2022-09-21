@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template: 50rem 80rem 1fr 30rem / 30% 70%;
+    grid-template: 50rem 80rem 1fr 20rem / 30% 70%;
     grid-template-areas: 
     "header header"
     "sidebar welcome_bar"
@@ -13,6 +13,10 @@ body {
     background-color: #1d4fa0;
 }
 
+#header_search {
+    background-color: rgba(31, 41, 55, 0.7);
+}
+
 .sidebar {
     grid-area: sidebar;
     background-color: #1F2937;
@@ -20,6 +24,7 @@ body {
 
 .welcome_bar {
     grid-area: welcome_bar;
+    box-shadow: 0rem 3rem 2rem gray;
 }
 
 .admin_tools {
@@ -30,3 +35,4 @@ body {
     grid-area: footer;
     background-color: #1d4fa0;
 }
+

@@ -63,3 +63,15 @@ html, body {
     color: white;
     text-decoration: none;
 }
+
+.footer {
+    display: flex;
+    font-size: 10rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
