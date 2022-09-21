@@ -10,16 +10,12 @@ body {
 
 .header {
     grid-area: header;
-}
-
-.header > a > img {
-    height: 45rem;
-    width: auto;
+    background-color: #1d4fa0;
 }
 
 .sidebar {
     grid-area: sidebar;
-    background-color: #1d4fa0;
+    background-color: #1F2937;
 }
 
 .welcome_bar {
@@ -32,4 +28,5 @@ body {
 
 .footer {
     grid-area: footer;
+    background-color: #1d4fa0;
 }
