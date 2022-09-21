@@ -37,7 +37,6 @@ body {
 }
 
 #sidebar a {
-    text-decoration: none;
     color: white;
     font-size: 20rem;
 }
@@ -116,6 +115,10 @@ body {
     font-size: 12rem;
 }
 
+#cards a {
+    color: black;
+}
+
 .recent {
     grid-area: recent;
     display: grid;
@@ -173,6 +176,14 @@ body {
     flex-flow: row nowrap;
     align-items: center;
     gap: 8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#announcements > div p::after {
+    content: "";
+    border: 1rem solid rgba(128, 128, 128, 0.4);
+    width: 80%;
 }
 
 .message {
