@@ -8,47 +8,93 @@ body {
     "footer footer";
 }
 
-.header {
+#header {
     grid-area: header;
     background-color: #1d4fa0;
 }
 
-.sidebar {
+#sidebar {
     grid-area: sidebar;
     background-color: #1F2937;
     display: flex;
     flex-flow: column wrap;
 }
 
-.sidebar ul {
+#sidebar ul {
     margin-top: 30rem;
     display: flex;
     flex-flow: column wrap;
     gap: 15rem;
 }
 
-.sidebar ul img {
+#sidebar ul img {
     filter: invert(1);
     height: 20rem;
     width: auto;
 }
 
-.sidebar a {
+#sidebar a {
     text-decoration: none;
     color: white;
     font-size: 20rem;
 }
 
-.welcome_bar {
+#welcome_bar {
     grid-area: welcome_bar;
     box-shadow: 0rem 3rem 2rem gray;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30rem;
+    font-size: 15rem;
+    padding: 5rem 20rem;
 }
 
-.admin_tools {
+#welcome_bar button {
+    flex: 1 1 auto;
+    font-size: 15rem;
+    background-color: #33455f;
+    color: white;
+    border: 4rem outset #33455f;
+    border-radius: 8rem;
+    padding: 3rem;
+}
+
+#welcome_bar button:hover {
+    background-color: #1F2937;
+    border: 4rem outset #1F2937;
+}
+
+#welcome_bar button:active {
+    border: 4rem inset #33455f;
+}
+
+#welcome_bar > img {
+    height: 70rem;
+    width: 70rem;
+}
+
+#greeting {
+    flex: 2 1 auto;
+    max-height: 70rem;
+    display: flex;
+    flex-flow: column;
+}
+
+#greeting p {
+    margin: 0;
+}
+
+#greeting p:last-child {
+    font-size: 20rem;
+}
+
+#cards {
     grid-area: admin_tools;
 }
 
-.footer {
+#footer {
     grid-area: footer;
     background-color: #1d4fa0;
 }

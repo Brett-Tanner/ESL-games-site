@@ -8,12 +8,12 @@ html, body {
     height: 100%;
 }
 
-.header, .footer {
+#header, #footer {
     background-color: #1F2937;
     padding: 5rem 10rem;
 }
 
-.header {
+#header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -22,7 +22,7 @@ html, body {
     color: white;
 }
 
-.header img {
+#header img {
     height: 40rem;
     width: auto;
 }
@@ -31,7 +31,7 @@ html, body {
     font-size: 20rem;
 }
 
-.header form {
+#header form {
     flex: 1 1 50%;
     display: flex;
     justify-content: center;
@@ -57,7 +57,7 @@ html, body {
     outline: none;
 }
 
-.header p, .header a {
+#header p, #header a {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -66,7 +66,7 @@ html, body {
     gap: 15rem;
 }
 
-.footer {
+#footer {
     display: flex;
     font-size: 10rem;
     align-items: center;
@@ -74,7 +74,7 @@ html, body {
     gap: 50rem;
 }
 
-.footer a {
+#footer a {
     color: white;
     text-decoration: none;
 }
