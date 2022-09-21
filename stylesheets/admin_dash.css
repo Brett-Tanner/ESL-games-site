@@ -39,6 +39,7 @@ body {
 #sidebar a {
     color: white;
     font-size: 20rem;
+    text-decoration: none;
 }
 
 #welcome_bar {
@@ -152,6 +153,10 @@ body {
     display: flex;
     flex-flow: column nowrap;
     gap: 10rem;
+}
+
+#announcements a, #messages a {
+    text-decoration: none;
 }
 
 #announcements > div, #messages > div {
